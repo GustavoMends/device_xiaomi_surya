@@ -9,3 +9,4 @@ set_prop(hal_camera_default, vendor_camera_prop)
 set_prop(hal_camera_default, vendor_video_prop)
 type camera_persist_file, file_type, vendor_persist_type;
 
+allow hal_camera_default public_adsprpcd_file:file r_file_perms;
