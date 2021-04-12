@@ -890,8 +890,8 @@ vendor/lib64/libGPTEE_vendor.so|527c8393ef416a9ddca4337fb4b5a1618551de44
 vendor/lib64/libQTEEConnector_vendor.so|bf3050ea3ef5435f0289092681f07a2fe834958b
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|131cdee67110cd0af1708ba31d81aef85456081a
 
-# QTI Telephony - from Nubia RKQ1.200826.002/nubia.20201029.204053:user/release-keys
-system_ext/framework/qti-telephony-common.jar|4bb49c73e447edb38a3044d9f5369c4391e97e27
+# QTI Telephony - from LA.QSSI.11.0.r1-10400-qssi.0
+system_ext/framework/qti-telephony-common.jar|1fd37129f961e58f9d1189736e2cb46290666b97
 
 # Radio - from LA.UM.9.1.r1-09100-SMxxx0.0
 etc/permissions/privapp-permissions-qti.xml|3eda27003bad39514039190d0d7eb675ba034cb9
