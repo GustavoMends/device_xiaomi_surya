@@ -61,6 +61,10 @@ telephony.lteOnCdmaDevice=1
 # Recovery
 ro.recovery.ui.margin_height=48
 
+#enable ssr
+persist.vendor.ssr.restart_level=ALL_ENABLE
+persist.vendor.ssr.enable_ramdumps=1
+
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
 
