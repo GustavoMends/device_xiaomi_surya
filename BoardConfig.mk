@@ -187,6 +187,9 @@ PRODUCT_SAFETYNET_MODEL_HACK := true
 # Security patch level
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
+# Set boot SPL
+BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy_vndr/SEPolicy.mk
