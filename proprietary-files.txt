@@ -616,6 +616,10 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so|f02b266ff4869cd38bd39f02d01d1586593c
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c04fbdd3123
 
 # Graphics - from QSSI(12100) & MANNAR(05700)
+vendor/gpu/kbc/sequence_manifest.bin
+vendor/gpu/kbc/unified_kbcs_32.bin
+vendor/gpu/kbc/unified_kbcs_64.bin
+vendor/gpu/kbc/unified_ksqs.bin
 vendor/lib/egl/eglSubDriverAndroid.so|f54f1f5b09ebe164610dff2ff79b0a510d9fbc7d
 vendor/lib/egl/libEGL_adreno.so|b648bf2510a74c9e3f3e90ccd59583ac4f4557ff
 vendor/lib/egl/libGLESv1_CM_adreno.so|2ed252a7049e934d832f01413a6eb83dca51a1c8
@@ -629,6 +633,8 @@ vendor/lib/libadreno_app_profiles.so|40c8b5259380aafe33cb73a8a3cd6d3c75a6715a
 vendor/lib/libadreno_utils.so|2c10296084d6b9dd349c442db37cf033948943ea
 vendor/lib/libc2d30_bltlib.so|117f775a4a61647b3628d9cfd64a05bef0646a14
 vendor/lib/libgpudataproducer.so|78b3b4ea71e9c4c5ca06aed210ad7ef79c49f011
+vendor/lib/libkcl.so
+vendor/lib/libkernelmanager.so
 vendor/lib/libgsl.so|a96cf2afda4e8467cc9f978f8324245f83d4f778
 vendor/lib/libllvm-glnext.so|e8dc657a9a860848134f4fc8730d87b537f23025
 vendor/lib64/egl/eglSubDriverAndroid.so|89d44cb02c3cd8e042aa2ef32b16fac37f260d6f
@@ -646,6 +652,8 @@ vendor/lib64/libadreno_app_profiles.so|06d3bfbf16e3644846922db79f891df07cafd180
 vendor/lib64/libadreno_utils.so|784e6784cdbdb7924bd8c7dc57528e54b589c18b
 vendor/lib64/libc2d30_bltlib.so|3732f8338eef96657c3c080e33fe484c7a184109
 vendor/lib64/libgpudataproducer.so|8496bd68ad6137dd2e3f85400c5c116373f36c43
+vendor/lib64/libkcl.so
+vendor/lib64/libkernelmanager.so
 vendor/lib64/libgsl.so|8e7e2b031fa80de36091cfcd3eb00d97a4a258cb
 vendor/lib64/libllvm-glnext.so|a001568973085171486af9d23de1af597edc07e3
 vendor/lib64/libllvm-qcom.so|82ee88a3cbbdb21deb7ffcf6ea96f2c75534a29a
