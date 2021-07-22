@@ -21,16 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit from common Nusantara configuration
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit from common configuration
+$(call inherit-product, vendor/dot/config/common.mk)
+
+# Boot Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
-NAD_BUILD_TYPE := OFFICIAL
-TARGET_USES_BLUR := true
 
 # Device identifier
-PRODUCT_NAME := nad_surya
+PRODUCT_NAME := dot_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO X3
+PRODUCT_MODEL := POCO X3 NFC
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
