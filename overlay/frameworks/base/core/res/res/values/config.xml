@@ -667,7 +667,4 @@
    <!-- Set the default dialer package name. -->
     <string name="config_defaultDialer" translatable="false">com.android.dialer</string>
 
-   <!-- Height of the status bar in portrait -->
-    <dimen name="status_bar_height_portrait">128px</dimen>
-
 </resources>
