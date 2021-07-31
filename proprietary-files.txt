@@ -50,6 +50,35 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so|7c89039a1d670ff6f92ada82bd1ff2c236
 vendor/lib/hw/com.dsi.ant@1.0-impl.so|d99ff0030ce14172d9d10e0b1f31b2d201aade10
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|0f8f5c3081d0ef745e0896b1fceea15f52fe3b21
 
+# Audio - from QSSI(11600) & MANNAR(05200)
+system_ext/etc/permissions/audiosphere.xml
+-system_ext/framework/audiosphere.jar
+-system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar
+system_ext/lib/libbinauralrenderer_wrapper.qti.so
+system_ext/lib/libhoaeffects_csim.so
+system_ext/lib/libhoaeffects.qti.so
+system_ext/lib/liblistenjni.qti.so
+system_ext/lib/liblistensoundmodel2.qti.so
+system_ext/lib/libvr_amb_engine.so
+system_ext/lib/libvr_object_engine.so
+system_ext/lib/libvr_sam_wrapper.so
+-system_ext/lib/libvraudio.so
+system_ext/lib/libvraudio_client.qti.so
+system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
+system_ext/lib/vendor.qti.voiceprint@1.0.so
+system_ext/lib64/libbinauralrenderer_wrapper.qti.so
+system_ext/lib64/libhoaeffects_csim.so
+system_ext/lib64/libhoaeffects.qti.so
+system_ext/lib64/liblistenjni.qti.so
+system_ext/lib64/liblistensoundmodel2.qti.so
+system_ext/lib64/libvr_amb_engine.so
+system_ext/lib64/libvr_object_engine.so
+system_ext/lib64/libvr_sam_wrapper.so
+-system_ext/lib64/libvraudio.so
+system_ext/lib64/libvraudio_client.qti.so
+system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
+system_ext/lib64/vendor.qti.voiceprint@1.0.so
+
 # Audio - from surya
 vendor/lib/liba2dpoffload.so|fd6421911c0dd7bf95e9cc2757f23ca935ee9ae0
 vendor/lib/libacdb-fts.so|6a3edbf3dc492b3a0962c9e6b58df64bd5bc92ff
