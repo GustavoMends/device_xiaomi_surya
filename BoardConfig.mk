@@ -81,7 +81,7 @@ LOC_HIDL_VERSION := 4.0
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/hidl/manifest.xml \
-    hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
+    hardware/qcom-caf/sm8150-surya/media/conf_files/sm6150/c2_manifest.xml
 ODM_MANIFEST_SKUS := surya
 ODM_MANIFEST_SURYA_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-qva.xml \
@@ -93,6 +93,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_surya
 
 # Input
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 96
+
+# Override Hals
+OVERRIDE_QCOM_HARDWARE_VARIANT := sm8150-surya
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7
