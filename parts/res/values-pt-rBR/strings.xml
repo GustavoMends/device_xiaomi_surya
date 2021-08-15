@@ -16,11 +16,13 @@
      limitations under the License.
 -->
 <resources>
+
     <!-- Dirac settings -->
     <string name="dirac_title">Mi Sound Enhancer</string>
     <string name="dirac_summary">Otimizar qualidade de áudio</string>
     <string name="dirac_headset_title">Escolher tipo de fone de ouvido</string>
     <string name="dirac_preset_title">Escolha uma predefinição</string>
+
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">Padrão</string>
     <string name="dirac_headset_earbuds">Mi Earbuds</string>
@@ -44,6 +46,7 @@
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
+
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">Padrão</string>
     <string name="dirac_preset_rock">Rock</string>
@@ -56,4 +59,58 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Perfis Térmicos</string>
+    <string name="thermal_summary">Ajuste os perfis térmicos por aplicativo para obter o desempenho ideal</string>
+    <string name="thermal_default">Padrão</string>
+    <string name="thermal_benchmark">Benchmark</string>
+    <string name="thermal_camera">Câmera</string>
+    <string name="thermal_dialer">Discador</string>
+    <string name="thermal_gaming">Jogos</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Limpador do Alto-falante</string>
+    <string name="clear_speaker_summary">Deixe ativado por 30 segundos para limpar o alto-falante </string>
+    <string name="clear_speaker_description">Use esse recurso uma ou duas vezes se descobrir que o alto-falante está bloqueado por poeira. Coloque o volume da mídia no máximo. \n\ nSe o alto-falante estiver muito bloqueado, use de 2 a 5 vezes enquanto agita o dispositivo com o alto-falante voltado para baixo. \n\nALERTA: verifique se o fone de ouvido esta desconectado.</string>
+
+    <!-- kcal -->
+    <string name="device_kcal_title">Calibração de cores da tela </string>
+    <string name="device_kcal_summary">Calibração de cores da tela usando KCAL</string>
+    <string name="advanced_settings_kcal">Calibração de cores da tela</string>
+    <string name="cat_colormanagement">Configurações de cores</string>
+    <string name="cat_calibration">Calibração de tela</string>
+
+    <string name="kcal_enabled">Ligado</string>
+    <string name="kcal_disabled">Desligado</string>
+    <string name="set_on_boot">Aplicar na inicialização</string>
+    <string name="color_red">Vermelho</string>
+    <string name="color_green">Verde</string>
+    <string name="color_blue">Azul</string>
+    <string name="color_minimum">Mínimo</string>
+    <string name="saturation">Saturação</string>
+    <string name="value">Valor</string>
+    <string name="contrast">Contraste</string>
+    <string name="hue">Matiz</string>
+    <string name="grayscale">Tela em tons de cinza</string>
+
+    <string name="presets_dialog_title">Selecionar predefinições</string>
+
+    <!-- Presets -->
+    <string name="preset_default">Padrão</string>
+    <string name="preset_version_1">V1</string>
+    <string name="preset_version_2">V2</string>
+    <string name="preset_version_3">Version 3</string>
+    <string name="preset_triluminous">Triluminous</string>
+    <string name="preset_deep_black_white">Preto Profundo e Branco</string>
+    <string name="preset_deep_natural">Natural Intenso</string>
+    <string name="preset_cool_amoled">Amoled Frio</string>
+    <string name="preset_extreme_amoled">Amoled Extremo</string>
+    <string name="preset_warm_amoled">Amoled Quente</string>
+    <string name="preset_hybrid_mamba">Mamba Híbrido</string>
+    <string name="preset_burn_in">Proteção contra Retenção de Tela</string>
+
+    <!-- menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Redefinir</string>
 </resources>
