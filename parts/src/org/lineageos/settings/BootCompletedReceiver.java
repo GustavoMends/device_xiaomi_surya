@@ -24,6 +24,7 @@ import android.provider.Settings;
 
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.dirac.DiracUtils;
+import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver implements Controller {
@@ -59,6 +60,10 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Controll
 
         // Dirac
         DiracUtils.initialize(context);
+
+        // Doze
+        DozeUtils.checkDozeService(context);
+        DozeUtils.enableDoze(context, DozeUtils.isDozeEnabled(context));
 
         // Thermal Profiles
         ThermalUtils.startService(context);
