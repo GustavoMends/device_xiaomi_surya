@@ -61,8 +61,8 @@
     <string name="dirac_preset_metal">Metal</string>
 
     <!-- Thermal Profiles -->
-    <string name="thermal_title">Perfis Térmicos</string>
-    <string name="thermal_summary">Ajuste os perfis térmicos por aplicativo para obter o desempenho ideal</string>
+    <string name="thermal_title">Perfis Térmicos </string>
+    <string name="thermal_summary">Ajuste os perfis térmicos e a sensibilidade da tela por aplicativo para obter o desempenho ideal</string>
     <string name="thermal_default">Padrão</string>
     <string name="thermal_benchmark">Benchmark</string>
     <string name="thermal_camera">Câmera</string>
@@ -113,4 +113,24 @@
     <!-- menu -->
     <string name="kcal_presets">@string/presets_dialog_title</string>
     <string name="kcal_reset">Redefinir</string>
+
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Touch Control</string>
+    <string name="touch_game_mode_title">Habilitar modo gamer</string>
+    <string name="touch_game_mode_summary">Use os controles de toque para uma melhor experiência de jogo</string>
+    <string name="touch_response_title">Touch response</string>
+    <string name="touch_response_summary"> Controle a resposta ao toque </string>
+    <string name="touch_sensitivity_title">Touch sensitivity</string>
+    <string name="touch_sensitivity_summary">Controle a sensibilidade de toques rápidos</string>
+    <string name="touch_resistant_title">Touch-resistant area</string>
+    <string name="touch_resistant_summary">Reduz a sensibilidade próxima às bordas para evitar o acionamento de controles de toque</string>
+
+    <!-- LCD Features -->
+    <string name="lcd_features_title">LCD features</string>
+    <string name="lcd_features_summary">High Brightness Mode, CABC</string>
+    <string name="lcd_hbm_title">High Brightness Mode (HBM)</string>
+    <string name="lcd_hbm_tile_title">HBM</string>
+    <string name="lcd_cabc_title">CABC Mode</string>
+    <string name="lcd_features_info">Modo de alto brilho (HBM) aumenta o brilho máximo da tela para melhorar a visibilidade sob a luz solar.  Aumenta o consumo de energia.\N\nCABC (Controle de luz de fundo adaptável de conteúdo) ajusta o brilho da tela e da luz de fundo com base no conteúdo mostrado atualmente, para reduzir o consumo de energia sem degradação.</string>
+
 </resources>
