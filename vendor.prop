@@ -171,7 +171,6 @@ vendor.display.disable_idle_time_hdr=1
 vendor.display.disable_idle_time_video=1
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
-vendor.display.skip_refresh_rate_change=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.update_vsync_on_doze=1
 
