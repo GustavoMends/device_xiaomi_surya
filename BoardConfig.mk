@@ -24,7 +24,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
@@ -55,7 +55,7 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_CAMERA_BOOTTIME_TIMESTAMP := true
 
 # Display
-TARGET_SCREEN_DENSITY := 420
+TARGET_SCREEN_DENSITY := 410
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
 TARGET_USES_DRM_PP := true
@@ -81,7 +81,7 @@ LOC_HIDL_VERSION := 4.0
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/hidl/manifest.xml \
-    hardware/qcom-caf/sm8150-surya/media/conf_files/sm6150/c2_manifest.xml
+    hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 ODM_MANIFEST_SKUS := surya
 ODM_MANIFEST_SURYA_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-qva.xml \
@@ -94,22 +94,17 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_surya
 # Input
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 96
 
-# Override Hals
-OVERRIDE_QCOM_HARDWARE_VARIANT := sm8150-surya
-
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7
 BOARD_KERNEL_CMDLINE += kpti=off cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-TARGET_KERNEL_CONFIG := vendor/surya-perf_defconfig
+TARGET_KERNEL_CONFIG := surya-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
-TARGET_KERNEL_USE_LATEST_CLANG := true
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
-TARGET_KERNEL_ADDITIONAL_FLAGS += LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
+TARGET_KERNEL_NEW_GCC_COMPILE := true
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin/aarch64-elf-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32 := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi/bin/arm-eabi-
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version 2
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -132,7 +127,7 @@ BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 8585740288
 
-ifeq ($(USE_GAPPS),true)
+ifeq ($(WITH_GAPPS),true)
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 104857600
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 104857600
 else

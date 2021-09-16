@@ -22,17 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit from common configuration
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # Boot Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Arrow Stuffs
-ARROW_GAPPS := true
-DEVICE_MAINTAINER=GustavoMends
+# Octavi Stuffs
+TARGET_USES_BLUR := true
+OCTAVI_BUILD_TYPE := Unified
+WITH_GAPPS := true
+OCTAVI_DEVICE_MAINTAINER := GustavoMends
 
 # Device identifier
-PRODUCT_NAME := arrow_surya
+PRODUCT_NAME := octavi_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 NFC
